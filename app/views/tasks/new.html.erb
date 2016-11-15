@@ -1,0 +1,9 @@
+<%= form_for(@task) do |f| %>
+  <%= f.label :content %>
+  <%= f.text_field :content %>
+
+  <%= f.label :status %>
+  <%= f.select :status, ['done', 'to do']%>
+
+  <%= f.submit %>
+<% end %>

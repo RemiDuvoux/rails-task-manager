@@ -1,0 +1,4 @@
+<h2><%= @task.content %></h2>
+<p><%= @task.status %></p>
+<%= link_to "Delete this task", task_path(@task), method: :delete %>
+<%= link_to "Back to index", tasks_path %>
